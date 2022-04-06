@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <item-->
+<!--        android:id="@+id/m1"-->
+<!--        android:title="Home" />-->
+    <item
+        android:id="@+id/m12"
+        android:title="List Mater Menus" />
+    <item
+        android:id="@+id/m13"
+        android:title="List Shop Admin"/>
+    <item
+        android:id="@+id/m9"
+        android:title="Logout"/>
+</menu>

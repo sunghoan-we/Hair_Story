@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.staff.RegisterStaff">
+
+    <TextView
+        android:id="@+id/txtRegStaffShopName"
+        android:layout_width="150sp"
+        android:layout_height="30sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="15dp"
+        android:background="#EDEDED"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:text="Shop Name"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView41"
+        app:layout_constraintTop_toBottomOf="@+id/editRegStaffPhoto" />
+
+    <EditText
+        android:id="@+id/editRegStaffTel1"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#EDEDED"
+        android:gravity="right|center_vertical"
+        android:hint="tel1"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView64"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="100sp"
+        android:layout_height="30sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="right|center_vertical"
+        android:text="Shop \u0026 Branch"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+    <EditText
+        android:id="@+id/editRegStaffBranchId"
+        android:layout_width="0dp"
+        android:layout_height="30sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#EDEDED"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Select Branch"
+        android:inputType="text"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtRegStaffShopName"
+        app:layout_constraintTop_toBottomOf="@+id/editRegStaffPhoto" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView66">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/checkBox6"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:text="Service1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/txtShapName"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:background="#EDEDED"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Price"
+                    android:inputType="text"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/editTextID2"
+                    app:layout_constraintStart_toEndOf="@+id/checkBox6"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/editTextID2"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="52dp"
+                    android:layout_marginRight="52dp"
+                    android:background="#EDEDED"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Time"
+                    android:inputType="text"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txtShapName"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/checkBox7"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:text="Service2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/editTextID15"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:background="#EDEDED"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Price"
+                    android:inputType="text"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/editTextID4"
+                    app:layout_constraintStart_toEndOf="@+id/checkBox7"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/editTextID4"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="52dp"
+                    android:layout_marginRight="52dp"
+                    android:background="#EDEDED"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Price"
+                    android:inputType="text"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/editTextID15"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="260dp"
+        android:layout_marginRight="260dp"
+        android:text="- Service Information -"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+    <Button
+        android:id="@+id/btnRegStaffRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="98dp"
+        android:layout_marginLeft="98dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="16dp"
+        android:text="Register"
+        app:backgroundTint="#A5A5A5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnRegStaffReset"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.684" />
+
+    <Button
+        android:id="@+id/btnRegStaffReset"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:layout_marginBottom="16dp"
+        android:text="Reset"
+        app:backgroundTint="#A5A5A5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <EditText
+        android:id="@+id/editRegStaffLName"
+        android:layout_width="128dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="7dp"
+        android:background="#EDEDED"
+        android:gravity="right|center_vertical"
+        android:hint="Enter Last Name"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView53"
+        app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+    <EditText
+        android:id="@+id/editRegStaffFName"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#EDEDED"
+        android:gravity="right|center_vertical"
+        android:hint="Enter First Name"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editRegStaffLName"
+        app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+    <EditText
+        android:id="@+id/editRegStaffPhoto"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#EDEDED"
+        android:gravity="right|center_vertical"
+        android:hint="Enter the path of the photo"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView46"
+        app:layout_constraintTop_toBottomOf="@+id/editRegStaffDateOfBirth" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="120sp"
+        android:layout_height="40sp"
+        android:layout_below="@+id/textView16"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:text="Photo"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+    <TextView
+        android:id="@+id/textView64"
+        android:layout_width="120sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:text="Contact"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="260dp"
+        android:layout_marginRight="260dp"
+        android:text="- Personal Information -"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="120sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:text="Date of Birth"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView63" />
+
+    <EditText
+        android:id="@+id/editRegStaffEmail"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#EDEDED"
+        android:gravity="right|center_vertical"
+        android:hint="Enter Email"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView63"
+        app:layout_constraintTop_toBottomOf="@+id/editRegStaffTel1" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="120sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+    <TextView
+        android:id="@+id/textView63"
+        android:layout_width="120sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView64" />
+
+    <EditText
+        android:id="@+id/editRegStaffDateOfBirth"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#EDEDED"
+        android:gravity="right|center_vertical"
+        android:hint="Enter date of birth"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView59"
+        app:layout_constraintTop_toBottomOf="@+id/editRegStaffEmail" />
+
+    <EditText
+        android:id="@+id/editRegStaffTel3"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#EDEDED"
+        android:gravity="right|center_vertical"
+        android:hint="tel3"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editRegStaffTel2"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <EditText
+        android:id="@+id/editRegStaffTel2"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="4dp"
+        android:background="#EDEDED"
+        android:gravity="right|center_vertical"
+        android:hint="tel2"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/editRegStaffTel1"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="120sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:text="Gender"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/admin_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation='horizontal'
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView55"
+        app:layout_constraintTop_toBottomOf="@+id/editRegStaffLName">
+
+        <RadioButton
+            android:id="@+id/rbnRegStaffMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/rbnRegStaffFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/rbnRegStaffOthers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Others" />
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

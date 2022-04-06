@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+
+    android:background="#F4F4F4"
+
+    android:orientation="horizontal"
+
+    app:layout_constraintHorizontal_chainStyle="spread">
+
+    <ImageButton
+        android:id="@+id/menu_button"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/menu"
+        android:onClick="onClickMenu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/alarm_button"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bell"
+        android:contentDescription="menu3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_superAdmin_header_back"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:background="#DDDDDD"
+        android:padding="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_superAdmin_header_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_button"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/txt_superAdmin_header_name"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="10dp"
+        android:background="#DDDDDD"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Page Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_superAdmin_header_back"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_button"
+        app:layout_marginBaseline="0dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--item
+        android:id="@+id/m1"
+        android:title="Home" /-->
+    <item
+        android:id="@+id/m34"
+        android:title="List Staff"/>
+    <item
+        android:id="@+id/m35"
+        android:title="List Reservation"/>
+    <item
+        android:id="@+id/m36"
+        android:title="List Sales"/>
+    <item
+        android:id="@+id/m9"
+        android:title="Logout"/>
+</menu>

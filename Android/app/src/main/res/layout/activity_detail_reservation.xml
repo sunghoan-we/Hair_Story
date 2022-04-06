@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.reservation.DetailReservation">
+
+    <!-- Header Include -->
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView67"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#DDDDDD"
+                android:text="Service1 - $20\nService2 - $30" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="260dp"
+        android:layout_marginRight="260dp"
+        android:text="- Service Information -"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_reservation_member_make_date3" />
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/admin_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="98dp"
+        android:layout_marginLeft="98dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="16dp"
+        android:text="Save"
+        app:backgroundTint="#A5A5A5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="102dp"
+        android:layout_marginRight="102dp"
+        android:layout_marginBottom="16dp"
+        android:text="Delete"
+        app:backgroundTint="#A5A5A5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <!-- Back button & text -->
+
+    <!-- Main Contents -->
+
+    <!-- Submit button -->
+
+
+    <!-- Include footer -->
+
+    <EditText
+        android:id="@+id/input_reservation_member_make_date2"
+        android:layout_width="0dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#EDEDED"
+        android:ems="10"
+        android:gravity="left|center_vertical"
+        android:inputType="textPersonName"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:text="Mark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/label_reservation_member_make_date"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <TextView
+        android:id="@+id/label_reservation_member_make_date"
+        android:layout_width="100sp"
+        android:layout_height="30sp"
+        android:layout_below="@+id/label_reg_shopAdmin_ID"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:gravity="right|center_vertical"
+        android:paddingLeft="10sp"
+        android:text="Rsv. Time"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_reservation_member_make_cName" />
+
+    <TextView
+        android:id="@+id/label_reservation_member_make_cName"
+        android:layout_width="100sp"
+        android:layout_height="30sp"
+        android:layout_below="@+id/label_reg_shopAdmin_ID"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="right|center_vertical"
+        android:paddingLeft="10sp"
+        android:text="Customer"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <TextView
+        android:id="@+id/label_reservation_member_make_designer"
+        android:layout_width="100sp"
+        android:layout_height="30sp"
+        android:layout_below="@+id/label_reg_shopAdmin_ID"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:gravity="right|center_vertical"
+        android:paddingLeft="10sp"
+        android:text="Designer"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_reservation_member_make_date" />
+
+    <EditText
+        android:id="@+id/input_reservation_member_make_dName"
+        android:layout_width="0dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#EDEDED"
+        android:ems="10"
+        android:gravity="left|center_vertical"
+        android:inputType="textPersonName"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:text="Staff1"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/label_reservation_member_make_designer"
+        app:layout_constraintTop_toBottomOf="@+id/input_reservation_member_make_date" />
+
+    <EditText
+        android:id="@+id/input_reservation_member_make_date"
+        android:layout_width="0dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#EDEDED"
+        android:ems="10"
+        android:gravity="left|center_vertical"
+        android:inputType="textPersonName"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:text="09:00 1st. Dec. 2021"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/label_reservation_member_make_date"
+        app:layout_constraintTop_toBottomOf="@+id/input_reservation_member_make_date2" />
+
+    <TextView
+        android:id="@+id/input_reservation_member_make_date5"
+        android:layout_width="0dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#EDEDED"
+        android:ems="10"
+        android:gravity="left|center_vertical"
+        android:inputType="textPersonName"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:text="Shop Name"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/input_reservation_member_make_date6"
+        app:layout_constraintStart_toEndOf="@+id/label_reservation_member_make_date5"
+        app:layout_constraintTop_toBottomOf="@+id/input_reservation_member_make_dName" />
+
+    <TextView
+        android:id="@+id/label_reservation_member_make_date5"
+        android:layout_width="100sp"
+        android:layout_height="30sp"
+        android:layout_below="@+id/label_reg_shopAdmin_ID"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:gravity="right|center_vertical"
+        android:paddingLeft="10sp"
+        android:text="Shop / Branch"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_reservation_member_make_designer" />
+
+    <EditText
+        android:id="@+id/input_reservation_member_make_date6"
+        android:layout_width="0dp"
+        android:layout_height="30sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#EDEDED"
+        android:ems="10"
+        android:gravity="left|center_vertical"
+        android:inputType="textPersonName"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:text="Vancouver"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/input_reservation_member_make_date5"
+        app:layout_constraintTop_toBottomOf="@+id/input_reservation_member_make_dName" />
+
+    <TextView
+        android:id="@+id/label_reservation_member_make_date3"
+        android:layout_width="100sp"
+        android:layout_height="30sp"
+        android:layout_below="@+id/label_reg_shopAdmin_ID"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="right|center_vertical"
+        android:paddingLeft="10sp"
+        android:text="Est. Time"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_reservation_member_make_date5" />
+
+    <TextView
+        android:id="@+id/input_reservation_member_make_est"
+        android:layout_width="0dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#EDEDED"
+        android:ems="10"
+        android:gravity="left|center_vertical"
+        android:inputType="textPersonName"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:text="3 hours"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/label_reservation_member_make_date3"
+        app:layout_constraintTop_toBottomOf="@+id/input_reservation_member_make_date5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">HairStory</string>
+    <string name="string_go_back">Go Back</string>
+    <string name="string_edit_password">Enter your new password</string>
+    <string name="string_back_button">Back Button</string>
+    <string name="string_title_super_menus">Select Menu</string>
+    <string name="str_button_m_detail_info">View Master Menu Detail Info</string>
+    <string name="str_button_register_mMenu">Register Master Menu</string>
+    <string name="str_button_edit_mMenu_detail_info">Edit Master Menu Detail Info</string>
+    <string name="str_account_info">- Account Information -</string>
+    <string name="str_personal_info">- Personal Information -</string>
+    <string name="str_detail_masterMenu_title">Detail Menu Information</string>
+    <string name="str_detail_masterMenu_mTitle">- Menu Information -</string>
+    <string name="str_detail_masterMenu_mTitle2">- Available Designer -</string>
+    <string name="str_reservation_history">- Reservation History -</string>
+
+    <array name="array_select_sex">
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+
+    <array name="array_select_category">
+        <item>Cut</item>
+        <item>Firm</item>
+        <item>Dye</item>
+    </array>
+
+    <array name="array_select_menu_cut">
+        <item>Cut A</item>
+        <item>Cut B</item>
+        <item>Cut C</item>
+        <item>Cut D</item>
+        <item>Cut E</item>
+    </array>
+
+    <array name="array_select_menu_firm">
+        <item>Firm A</item>
+        <item>Firm B</item>
+        <item>Firm C</item>
+        <item>Firm D</item>
+        <item>Firm E</item>
+    </array>
+
+    <array name="array_select_menu_dye">
+        <item>Dye A</item>
+        <item>Dye B</item>
+        <item>Dye C</item>
+    </array>
+
+    <array name="array_select_res_time">
+        <item>09:00</item>
+        <item>10:00</item>
+        <item>11:00</item>
+        <item>12:00</item>
+        <item>13:00</item>
+        <item>14:00</item>
+        <item>15:00</item>
+        <item>16:00</item>
+        <item>17:00</item>
+        <item>18:00</item>
+    </array>
+
+    <array name="array_select_length">
+        <item>Length</item>
+        <item>Long</item>
+        <item>Medium</item>
+        <item>Short</item>
+    </array>
+
+    <array name="array_select_dateF">
+        <item>From</item>
+    </array>
+
+    <array name="array_select_dateT">
+        <item>To</item>
+    </array>
+
+    <array name="array_select_shop">
+        <item>Shop_01</item>
+    </array>
+
+    <array name="array_select_branch">
+        <item>Branch_01</item>
+    </array>
+
+    <array name="array_select_designer">
+        <item>Designer_01</item>
+    </array>
+    <string name="title_activity_search_member_branch">activity_search_member_branch</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>
